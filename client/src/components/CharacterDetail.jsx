@@ -6,7 +6,7 @@ var CharacterDetail = function (props) {
   }
   return (
    <div className='character-detail'>
-   <a href={props.character.name}>{props.character.name}</a>
+   <a onClick={props.handleClick} href="">{props.character.name}</a>
    <p>
    <a href={props.character.house}>{props.character.house}</a>
    </p>

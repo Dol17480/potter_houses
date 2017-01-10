@@ -21,6 +21,13 @@ componentDidMount: function () {
   }.bind(this);
   request.send(null);
 },
+
+
+  handleClick: function(e){
+    e.preventDefault();
+    console.log(e, "well done, you can click a button....")
+  },
+
   render: function () {
     return (
       <div>
@@ -31,6 +38,7 @@ componentDidMount: function () {
         />
         <CharacterDetail 
         character={this.state.focusCharacter}
+        handleClick={this.handleClick}
         />
       </div>
     );
