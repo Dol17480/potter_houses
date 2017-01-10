@@ -1,11 +1,11 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var HouseContainer = require('./containers/HouseContainer.jsx');
+var CharacterContainer = require('./containers/CharacterContainer.jsx');
 
 window.onload = function () {
   ReactDOM.render(
-    <HouseContainer />,
+    <CharacterContainer />,
     document.getElementById('app')
   );
 };
