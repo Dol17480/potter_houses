@@ -6,9 +6,10 @@ var CharacterDetail = function (props) {
   }
   return (
    <div className='character-detail'>
-   <h4>{props.character.name}</h4>
-   <p>House: {props.character.house}</p>
-   <p>Species: {props.character.species}</p>
+   <a href={props.character.name}>{props.character.name}</a>
+   <p>
+   <a href={props.character.house}>{props.character.house}</a>
+   </p>
    <img src={props.character.image}/>
    </div>
   );
